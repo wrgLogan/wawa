@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.page-container{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url("./window-bg.png");
+    /* background: linear-gradient(blue, green); */
+    background-size: 101% 100%;
+    background-position: center center;
+}
+
+.cute-btn{
+    margin: 200px auto;
+    width: 100px;
+    height: 30px;
+    background-color: #986308;
+    border-radius: 1000px;
+}
+
+.cute-btn:active .cute-btn-top{
+    top: 1px;
+    height: 28px;
+    border-top: 1px solid #d29729;
+    border-left: 1px solid #d29729;
+    border-right: 1px solid #d29729;
+    border-bottom: 1px solid #d29729;
+    user-select: none;
+}
+
+.cute-btn-top{
+    position: relative;
+    width: 98px;
+    height: 26px;
+    background-color: #ffd400;
+    background: linear-gradient(#f9d993, #f3c16d);
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 1000px;
+    color: #fff;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.17);
+    border-top: 1px solid #d29729;
+    border-left: 1px solid #d29729;
+    border-right: 1px solid #d29729;
+    border-bottom: 1px solid #d29729;
+}
+
+.move-btn-container{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: none;
+    /* background-color: #fff; */
+}
+
+.button.move-btn{
+    position: absolute;
+    font-size: 13px;
+    width: 2em;
+    height: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.move-btn.left{
+    top: 27px;
+    left: 0px;
+}
+
+.move-btn.top{
+    top: 0px;
+    left: 27px;
+}
+
+.move-btn.right{
+    right: 0px;
+    top: 27px;
+}
+
+.move-btn.bottom{
+    bottom: 0px;
+    left: 27px;
+}
+
+.header{
+    height: 70px;
+}
+
+.window{
+    height: 475px;
+}
+
+.btns-container{
+    margin-top: 10px;
+}
